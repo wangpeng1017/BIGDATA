@@ -3,15 +3,9 @@ import { MenuItem } from '@/types/menu';
 export const menuConfig: MenuItem[] = [
   {
     id: 'basic-management',
-    title: '基础登录和首页管理',
+    title: '首页',
     icon: 'Home',
     children: [
-      {
-        id: 'login',
-        title: '登录管理',
-        path: '/login',
-        icon: 'LogIn'
-      },
       {
         id: 'dashboard',
         title: '首页管理',
@@ -28,7 +22,7 @@ export const menuConfig: MenuItem[] = [
   },
   {
     id: 'data-integration',
-    title: '实训数据集成与管理模块',
+    title: '数据集成与管理模块',
     icon: 'FolderOpen',
     children: [
       {
@@ -53,7 +47,7 @@ export const menuConfig: MenuItem[] = [
   },
   {
     id: 'data-analysis',
-    title: '实训数据分析与治理模块',
+    title: '数据分析与治理模块',
     icon: 'TrendingUp',
     children: [
       {
@@ -88,7 +82,7 @@ export const menuConfig: MenuItem[] = [
       },
       {
         id: 'training-materials',
-        title: '实训素材',
+        title: '素材管理',
         path: '/training-materials',
         icon: 'BookOpen'
       },
@@ -102,7 +96,7 @@ export const menuConfig: MenuItem[] = [
   },
   {
     id: 'data-service',
-    title: '实训数据服务',
+    title: '数据服务',
     icon: 'Server',
     children: [
       {
@@ -121,7 +115,7 @@ export const menuConfig: MenuItem[] = [
   },
   {
     id: 'asset-management',
-    title: '实训数据资产管理',
+    title: '数据资产管理',
     icon: 'Package',
     children: [
       {
@@ -140,7 +134,7 @@ export const menuConfig: MenuItem[] = [
   },
   {
     id: 'app-management',
-    title: '实训应用管理',
+    title: '应用管理',
     icon: 'Smartphone',
     children: [
       {
@@ -159,7 +153,7 @@ export const menuConfig: MenuItem[] = [
   },
   {
     id: 'log-management',
-    title: '实训日志管理',
+    title: '日志管理',
     icon: 'FileText',
     children: [
       {
