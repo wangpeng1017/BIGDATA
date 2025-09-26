@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Folder, FolderOpen, File, Plus, Edit, Trash2, Search, Filter, Database, Table, BarChart3, FileText, Eye, ChevronRight, ChevronDown } from 'lucide-react';
 
 interface AssetNode {
@@ -232,7 +233,8 @@ export default function AssetCatalogPage() {
   });
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* 左侧目录树 */}
         <div className="lg:col-span-1">
@@ -460,5 +462,6 @@ export default function AssetCatalogPage() {
         </div>
       )}
     </div>
+  </Layout>
   );
 }

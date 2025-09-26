@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Search, Filter, Download, Eye, AlertTriangle, CheckCircle, XCircle, Clock, BarChart3, RefreshCw, Calendar } from 'lucide-react';
 
 interface ApiLog {
@@ -163,8 +164,9 @@ export default function ApiLogsPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="space-y-6">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
+        <div className="space-y-6">
         {/* 头部与统计 */}
         <div className="bg-white rounded-lg shadow">
           <div className="border-b border-gray-200 px-6 py-4">
@@ -380,6 +382,6 @@ export default function ApiLogsPage() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

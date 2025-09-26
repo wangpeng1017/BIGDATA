@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Search, Filter, Download, Eye, MessageCircle, Calendar, Phone, CheckCircle, XCircle, Clock, BarChart3, RefreshCw } from 'lucide-react';
 
 interface SmsLog {
@@ -72,7 +73,8 @@ export default function SmsLogsPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow">
         <div className="border-b border-gray-200 px-6 py-4">
           <div className="flex justify-between items-center">
@@ -184,5 +186,6 @@ export default function SmsLogsPage() {
         </div>
       </div>
     </div>
+  </Layout>
   );
 }

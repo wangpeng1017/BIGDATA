@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Search, Plus, Edit, Trash2, Monitor, Settings, CheckCircle, AlertTriangle, XCircle, Filter, RefreshCw, Activity } from 'lucide-react';
 
 interface AppSystem {
@@ -107,7 +108,8 @@ export default function AppSystemPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow">
         <div className="border-b border-gray-200 px-6 py-4">
           <div className="flex justify-between items-center">
@@ -234,5 +236,6 @@ export default function AppSystemPage() {
         </div>
       </div>
     </div>
+  </Layout>
   );
 }

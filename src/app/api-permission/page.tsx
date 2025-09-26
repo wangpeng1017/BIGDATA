@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Search, Plus, Edit, Trash2, Shield, User, Calendar, Check, X, Filter, Download, Eye } from 'lucide-react';
 
 interface ApiPermission {
@@ -185,8 +186,9 @@ export default function ApiPermissionPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="bg-white rounded-lg shadow">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
+        <div className="bg-white rounded-lg shadow">
         {/* 头部 */}
         <div className="border-b border-gray-200 px-6 py-4">
           <div className="flex justify-between items-center">
@@ -405,6 +407,6 @@ export default function ApiPermissionPage() {
           )}
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

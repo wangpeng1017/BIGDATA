@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Search, Filter, Download, Eye, Edit, Trash2, Database, Table, BarChart3, Plus, Check, X, Tag, Calendar, Users } from 'lucide-react';
 
 interface Asset {
@@ -231,7 +232,8 @@ export default function AssetListPage() {
   const categories = [...new Set(assets.map(asset => asset.category))];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow">
         {/* 头部 */}
         <div className="border-b border-gray-200 px-6 py-4">
@@ -559,5 +561,6 @@ export default function AssetListPage() {
         </div>
       )}
     </div>
+  </Layout>
   );
 }

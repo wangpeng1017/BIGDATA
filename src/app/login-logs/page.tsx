@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Search, Filter, Download, Eye, LogIn, MapPin, CheckCircle, XCircle, AlertTriangle, Calendar, Shield, Globe } from 'lucide-react';
 
 interface LoginLog {
@@ -145,7 +146,8 @@ export default function LoginLogsPage() {
   });
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow">
         <div className="border-b border-gray-200 px-6 py-4">
           <div className="flex justify-between items-center">
@@ -312,5 +314,6 @@ export default function LoginLogsPage() {
         </div>
       </div>
     </div>
+  </Layout>
   );
 }

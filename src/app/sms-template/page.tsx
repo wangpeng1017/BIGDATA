@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Layout from '@/components/Layout';
 import { Search, Plus, Edit, Trash2, MessageSquare, Eye, Copy, Send, Filter, FileText, Calendar, User, Tag, Check, X, Code } from 'lucide-react';
 
 interface SmsTemplate {
@@ -174,7 +175,8 @@ export default function SmsTemplatePage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow">
         {/* 头部 */}
         <div className="border-b border-gray-200 px-6 py-4">
@@ -440,5 +442,6 @@ export default function SmsTemplatePage() {
         </div>
       )}
     </div>
+  </Layout>
   );
 }
