@@ -10,7 +10,7 @@
   },
   "build": {
     "env": {
-      "NEXT_PUBLIC_APP_NAME": "重庆数据平台",
+      "NEXT_PUBLIC_APP_NAME": "大数据分析平台",
       "NEXT_PUBLIC_APP_VERSION": "1.0.0"
     }
   },

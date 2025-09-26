@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <header className="bg-white border-b border-gray-200 px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <h1 className="text-xl font-semibold text-gray-800">重庆数据平台</h1>
+              <h1 className="text-xl font-semibold text-gray-800">大数据分析平台</h1>
             </div>
             
             <div className="flex items-center space-x-4">

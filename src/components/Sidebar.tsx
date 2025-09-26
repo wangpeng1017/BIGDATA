@@ -80,7 +80,7 @@ const Sidebar: React.FC = () => {
   return (
     <div className="w-64 bg-white border-r border-gray-200 h-full overflow-y-auto">
       <div className="p-4 border-b border-gray-200">
-        <h2 className="text-lg font-semibold text-gray-800">重庆数据平台</h2>
+        <h2 className="text-lg font-semibold text-gray-800">大数据分析平台</h2>
       </div>
       
       <nav className="p-4">

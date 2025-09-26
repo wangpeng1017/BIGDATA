@@ -61,7 +61,7 @@ const Dashboard = () => {
         <div>
           <h1 className="text-2xl font-semibold text-gray-900">数据平台概览</h1>
           <p className="mt-1 text-sm text-gray-600">
-            欢迎使用重庆数据平台，这里是您的数据管理中心
+            欢迎使用大数据分析平台，这里是您的数据管理中心
           </p>
         </div>
 

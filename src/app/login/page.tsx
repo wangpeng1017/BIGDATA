@@ -40,10 +40,10 @@ export default function LoginPage() {
     e.preventDefault();
     setLoading(true);
     
-    // 模拟登录请求
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // 模拟登录加载时间
+    await new Promise(resolve => setTimeout(resolve, 500));
     
-    // 登录成功后跳转到首页
+    // 直接跳转到首页，不需要验证任何内容
     router.push('/dashboard');
   };
 
@@ -57,7 +57,7 @@ export default function LoginPage() {
       <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-xl shadow-lg">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            重庆数据平台
+            大数据分析平台
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             请登录您的账户
@@ -104,7 +104,6 @@ export default function LoginPage() {
                   id="username"
                   name="username"
                   type="text"
-                  required
                   value={formData.username}
                   onChange={handleInputChange}
                   className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
@@ -121,7 +120,6 @@ export default function LoginPage() {
                   id="password"
                   name="password"
                   type={showPassword ? 'text' : 'password'}
-                  required
                   value={formData.password}
                   onChange={handleInputChange}
                   className="relative block w-full px-3 py-2 pr-10 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
@@ -151,7 +149,6 @@ export default function LoginPage() {
                   id="phone"
                   name="phone"
                   type="tel"
-                  required
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
@@ -164,7 +161,6 @@ export default function LoginPage() {
                 <input
                   name="smsCode"
                   type="text"
-                  required
                   value={formData.smsCode}
                   onChange={handleInputChange}
                   className="flex-1 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -186,7 +182,6 @@ export default function LoginPage() {
             <input
               name="captcha"
               type="text"
-              required
               value={formData.captcha}
               onChange={handleInputChange}
               className="flex-1 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
